@@ -1,7 +1,29 @@
 import { Input } from "/src/components/ui/input"
+import { useNavigate, useLocation } from "react-router";
 
 
 export function Header() {
+    
+    const navigate = useNavigate();
+    const location = useLocation(); // current URL path
+    const isActive = (path) => location.pathname === path;
+  
+    const goToAbout = () => {
+      navigate("/aboutme");
+    };
+  
+    const goToHome = () => {
+      navigate("/");
+    };
+    const goToWork = () => {
+        navigate("/mywork");
+      };
+    const goToContact = () => {
+    navigate("/contact");
+    };
+
+    
+    
     return (
         <header className=" flex flex-col justify-between bg-[#010409] h-[100px] border-b border-neutral-500 ">
             <div className="flex gap-4 ml-3  mt-3">
@@ -28,19 +50,19 @@ export function Header() {
                 </div>
             </div>
             <div className=" flex">
-                <button className="px-2 py-2 ml-4 flex gap-2 items-center border-b-2 border-orange-500">
+                <button onClick={goToHome} className={`px-2 py-2 ml-4 flex gap-2 items-center ${isActive("/") ? "border-orange-500 border-b-2" : "border-none"}`}>
                     <img className="w-4 h-4" src="/Star.svg"></img>
                     <p className="text-sm">Overview</p>
                 </button>
-                <button className="px-2 py-2 ml-4 flex gap-2 items-center ">
+                <button onClick={goToAbout} className={`px-2 py-2 ml-4 flex gap-2 items-center ${isActive("/aboutme") ? "border-orange-500 border-b-2" : "border-none"}`}>
                     <img className="w-6 h-4" src="/Info.svg"></img>
                     <p className=" text-sm">About</p>
                 </button>
-                <button className="px-2 py-2 ml-4 flex gap-2 items-center ">
+                <button onClick={goToWork} className={`px-2 py-2 ml-4 flex gap-2 items-center ${isActive("/mywork") ? "border-orange-500 border-b-2" : "border-none"}`}>
                     <img className="w-6 h-4" src="/workflow.svg"></img>
                     <p className=" text-sm">Work</p>
                 </button>
-                <button className="px-2 py-2 ml-4 flex gap-2 items-center ">
+                <button onClick={goToContact} className={`px-2 py-2 ml-4 flex gap-2 items-center ${isActive("/contact") ? "border-orange-500 border-b-2" : "border-none"}`}>
                     <img className="w-6 h-4" src="/mail.svg"></img>
                     <p className=" text-sm">Contact</p>
                 </button>
@@ -49,7 +71,7 @@ export function Header() {
     );
 }
 
-
+  
 
 // export function InputDemo() {
 //   return <Input type="email" placeholder="Email" />

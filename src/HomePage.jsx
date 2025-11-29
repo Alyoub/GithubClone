@@ -1,5 +1,6 @@
 import { GithubHeatmap } from "./Contributions-Table"
 import { Header } from "./Header"
+import { LeftPanel } from "./components/LeftPanel";
 
 export function HomePage() {
     return (
@@ -7,39 +8,7 @@ export function HomePage() {
             <Header />
             <div className="container mx-auto px-4">
                 <mean className="flex gap-6 mt-8 flex-col md:flex-row">
-                    <div className="p-4  flex-1 ">
-                        <div className="w-45 h-45 md:w-50 md:h-50 border border-neutral-700  lg:w-70 lg:h-70 mx-auto rounded-full overflow-hidden">
-                            <img src="/profile.jpeg"
-                                className="w-full h-full object-cover"
-                                alt="profile"
-                            />
-                        </div>
-                        <p className="mt-4 font-bold sm:text-xs lg:text-lg xl:text-xl mx-auto">
-                            Ayoub lotfi
-                        </p>
-                        <p className="sm:text-xs lg:text-sm xl:text-xl mx-auto text-neutral-400">
-                            alyoub
-                        </p>
-                        <button className="mt-6 bg-zinc-900 w-full py-2 border border-neutral-700 rounded-lg">
-                            View Resume
-                        </button>
-                        <div className="py-5 pb-8 flex gap-2 items-center  border-b-2 border-neutral-700">
-                            <img className="" src="/group-users.png"></img>
-                            <p className="text-sm text-neutral-400">
-                                <span className=" font-bold text-white" >12 </span>
-                                followers • <span className=" font-bold text-white" >19 </span> fllowing </p>
-                        </div>
-                        <div className="py-5 pb-8 items-center  border-b-2 border-neutral-700">
-                            <p className="font-bold">Highlights</p>
-                            <div className="flex mt-2 gap-2 ">
-                                <img className="w-5" src="/Star.svg" />
-                                <p className="border text-xs border-violet-500 text-violet-500 rounded-xl font-bold px-1 ">
-                                    PRO
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
+                    <LeftPanel />
                     <div className=" flex-3   px-4">
                         <div className="flex  items-center justify-between">
                             <p className="font-bold lg:text-sm xl:text-lg">Projects</p>

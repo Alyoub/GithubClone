@@ -48,8 +48,8 @@ export function AboutMePage() {
                             <img className="w-4" src="/menu-11.svg" />
                         </div>
                     </div>
-                    <div className="mt-8 mr-4 pb-6 border-b border-neutral-700  ml-4">
-                        {/* <h1 className="text-3xl font-semibold">
+                    <div className="mt-20 mr-4 pb-6 border-b border-neutral-700  ml-4">
+                        <h1 className="text-3xl font-semibold">
                             👋 Hello, I'm a{" "}
                             <ReactTyped
                                 strings={["UI/UX Designer", "Frontend Developer"]}
@@ -57,10 +57,14 @@ export function AboutMePage() {
                                 backSpeed={50}
                                 loop
                             />
-                        </h1> */}
-                        <h1 className="mt-4">
-                            I'm a <span className="font-semibold">Front-End Developer</span> and <span className="font-semibold">UI/UX Designer</span> passionate about creating clean, modern, and intuitive digital experiences.
-                            I love blending design and development to turn ideas into beautiful, responsive, and interactive interfaces.
+                        </h1>
+                        <h1 className="mt-8 ml-8 mr-8 text-neutral-200 leading-relaxed mb-6">
+                            I'm a <span className="font-semibold">Front-End Developer</span> and <span className="font-semibold">UI/UX Designer</span> who spends way too much time adjusting pixels and arguing with CSS. I love building clean, modern interfaces that actually make sense to humans (and hopefully don’t break on mobile… hopefully).
+
+I’m obsessed with good design, smooth interactions, and making users think “wow” instead of “what is this?”.
+Whether I’m sketching wireframes, choosing the perfect shade of blue, or fighting with responsive layouts at 2 AM, I enjoy turning ideas into real, functional, and beautiful experiences.
+
+I like to say I mix logic, creativity, and just a pinch of chaos to build things that look good and feel even better. and interactive interfaces.
                         </h1>
                     </div>
                 </div>
@@ -97,11 +101,51 @@ export function AboutMePage() {
                         </div>
                     </div>
 
-                    <div className="border-b mt-8 border-neutral-700 pb-6">
-                            <p className="font-semibold">Releases</p>
-                        <div className="mt-4 flex gap-2  ">
-                            <img className="w-5" src="/link-04.svg" />
-                            <p className="text-sm underline text-blue-500">giithubclone.vercel.app</p>
+                    <div className="border-b mt-4 border-neutral-700 pb-6">
+                            <p className="font-semibold hover:text-blue-500">Releases</p>
+                        <div className="mt-4">
+                        <p className="text-xs text-neutral-400">No releases published</p>
+                            <p className="text-xs mt-1 underline text-blue-500">Create a new release</p>
+                        </div>
+                        
+                    </div>
+
+                    <div className="border-b mt-4 border-neutral-700 pb-6">
+                            <p className="font-semibold hover:text-blue-500">Packages</p>
+                        <div className="mt-4">
+                        <p className="text-xs text-neutral-400">No packages published</p>
+                            <p className="text-xs mt-1 underline text-blue-500">Publish your first package</p>
+                        </div>
+                        
+                    </div>
+                    <div className="border-b mt-4 border-neutral-700 pb-6">
+                            <p className="font-semibold hover:text-blue-500">Deployments <span className="ml-1 bg-gray-700  rounded-full px-2">1</span></p>
+                        <div className="mt-4 flex items-center gap-2">
+                        <img src="/checkmark-circle-02.svg" />
+                        <p className="text-sm font-semibold">Production <span className="font-medium text-neutral-400">yesterday</span></p>
+                        </div>
+                        
+                    </div>
+                    <div className="mt-4  pb-6">
+                            <p className="font-semibold hover:text-blue-500">Languages</p>
+                        <div className="flex">
+                        <div className="mt-4 flex-3 bg-yellow-300 h-2 rounded-l-lg"/>
+                        <div className="mt-4 flex-2 bg-violet-600 h-2 "/>
+                        <div className="mt-4 flex-1 bg-orange-600 h-2 rounded-r-lg "/>
+                        </div>
+                        <div className="mt-4">
+                            <div className=" gap-3 flex items-center">
+                            <p className="w-2 h-2 rounded-full bg-amber-300"></p>
+                            <p className="text-sm font-semibold">Skill <span className="test-sm ml-2 text-neutral-500"> 65%</span></p>
+
+                            <p className="ml-6 w-2 h-2 rounded-full bg-violet-600"></p>
+                            <p className="text-sm font-semibold">Luck <span className="test-sm ml-2 text-neutral-500"> 25%</span></p>
+                            </div>
+                            
+                            <div className=" gap-3 flex items-center">
+                            <p className="w-2 h-2 rounded-full bg-orange-600"></p>
+                            <p className="text-sm font-semibold">Hope <span className="test-sm ml-2 text-neutral-500"> 10%</span></p>
+                            </div>
                         </div>
                         
                     </div>
