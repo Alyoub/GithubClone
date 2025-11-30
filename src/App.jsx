@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router'
 import {NotFoundPage} from "./NotFoundPage"
 import { AboutMePage } from "./AboutMePage"
 import { MyWork } from "./MyWork"
-import { ProjectInfoDataCasa, ProjectInfoDataGitHub } from "./projectInfo"
+import { ProjectInfoDataCasa, ProjectInfoDataGitHub } from "./ProjectInfo"
 
 
 function App() {
