@@ -37,7 +37,7 @@ export function AboutMePage() {
                 </div>
             </div>
             <div className="container mt-2 gap-4  flex mx-auto px-4">
-                <div className="border border-neutral-700 rounded-sm   h-[700px] flex-3">
+                <div className="border  border-neutral-700 rounded-sm   h-[700px] flex-3">
                     <div className="border-b border-neutral-700 reounded-lg px-4 flex justify-between items-center ">
                         <div className="flex gap-2 py-2 px-2 border-b-2 border-orange-500 ">
                             <img className="w-4" src="/Read.svg" />

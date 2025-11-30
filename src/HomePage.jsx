@@ -1,8 +1,23 @@
 import { GithubHeatmap } from "./Contributions-Table"
 import { Header } from "./Header"
 import { LeftPanel } from "./components/LeftPanel";
+import { useNavigate } from "react-router";
+import  {Testcard } from "./components/TestCard"
+import { WorkingCard } from "./components/WorkingCard"
 
 export function HomePage() {
+    
+
+    const navigate = useNavigate();
+
+    const goToProject1 = () => {
+        navigate("/ProjectInfoDataCasa");
+      };
+      const goToProject2 = () => {
+        navigate("/ProjectInfoDataGitHub");
+      };
+    
+    
     return (
         <>
             <Header />
@@ -14,81 +29,28 @@ export function HomePage() {
                             <p className="font-bold lg:text-sm xl:text-lg">Projects</p>
                             <p className="lg:text-xs xl:text-sm text-blue-400 ">Customize your pin</p>
                         </div>
-                        <div className="grid grid-cols-2   gap-4 mt-2 ">
-                            <div className="flex flex-col justify-between h-[120px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between">
-                                    <div className="flex flex-col">
-                                        <p className="font-bold text-blue-400">Trans-Front</p>
-                                        <p className="text-gray-400 text-xs">
-                                            Forked from w0rmr/transbadtrip
-                                        </p>
-                                    </div>
-                                    <button className="border text-gray-300 border-neutral-700 px-4 py-1 rounded-2xl text-xs">
-                                        Public
-                                    </button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-yellow-300"></span>
-                                    <p className="text-sm text-gray-300">Javascript</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between h-[120px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between">
-                                    <div className="flex flex-col">
-                                        <p className="font-bold text-blue-400">Trans-Front</p>
-                                        <p className="text-gray-400 text-xs">
-                                            Forked from w0rmr/transbadtrip
-                                        </p>
-                                    </div>
-                                    <button className="border text-gray-300 border-neutral-700 px-4 py-1 rounded-2xl text-xs">
-                                        Public
-                                    </button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-violet-600"></span>
-                                    <p className="text-sm text-gray-300">Css</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between h-[100px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between ">
-                                    <p className="font-bold text-blue-400 ">FT-IRC </p>
-                                    <button className="border text-gray-300 border-neutral-700  px-4 py-1 rounded-2xl text-xs ">Public</button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-red-400"></span>
-                                    <p className="text-sm text-gray-300">C++</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between h-[100px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between ">
-                                    <p className="font-bold text-blue-400 ">Rock_Paper_Scissors</p>
-                                    <button className="border text-gray-300 border-neutral-700  px-4 py-1 rounded-2xl text-xs ">Public</button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-orange-500"></span>
-                                    <p className="text-sm text-gray-300">HTML</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between h-[100px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between ">
-                                    <p className="font-bold text-blue-400 ">Rock_Paper_Scissors</p>
-                                    <button className="border text-gray-300 border-neutral-700  px-4 py-1 rounded-2xl text-xs ">Public</button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-orange-500"></span>
-                                    <p className="text-sm text-gray-300">HTML</p>
-                                </div>
-                            </div>
-                            <div className="flex flex-col justify-between h-[100px] flex-1 rounded-lg border-2 border-neutral-700 p-4  hover:border-neutral-700 transition">
-                                <div className="w-full flex items-start justify-between ">
-                                    <p className="font-bold text-blue-400 ">Rock_Paper_Scissors</p>
-                                    <button className="border text-gray-300 border-neutral-700  px-4 py-1 rounded-2xl text-xs ">Public</button>
-                                </div>
-                                <div className="flex items-baseline gap-2">
-                                    <span className="rounded-full w-3 h-3 bg-orange-500"></span>
-                                    <p className="text-sm text-gray-300">HTML</p>
-                                </div>
-                            </div>
+                        <div className="grid grid-cols-2  gap-4 mt-2 ">
+                            <WorkingCard 
+                            title="E-Commerce UI/UX"
+                            description="CASA STITCH — Premium Streetwear E-Commerce UI/UX"
+                            status="Public"
+                            color="#D946EF"
+                            tech="UI / UX"
+                            onClick={goToProject1}
+                            />
+                            <WorkingCard 
+                            title="GitHub Clone Portfolio"
+                            description="GitHub Clone Portfolio Project"
+                            status="Public"
+                            color="#D946EF"
+                            tech="JavaScript"
+                            onClick={goToProject2}
+                            />
+                           
+                            <Testcard />
+                            <Testcard />
+                            <Testcard />
+                            
                         </div>
                         <div className="mt-12 flex">
                             <div className="w-[700px] border rounded-tr-lg rounded-tl-lg border-neutral-700 ">
