@@ -16,7 +16,7 @@ export function ProjectInfo1({
   return (
     <>
       <Header />
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pb-20">
         <main className="flex gap-6 mt-8 flex-col md:flex-row">
           <LeftPanel />
           <div className="flex-2">

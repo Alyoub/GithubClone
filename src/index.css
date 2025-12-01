@@ -130,4 +130,12 @@ body {
 .github-heatmap rect[data-level="3"] { fill: #30A14E; }
 .github-heatmap rect[data-level="4"] { fill: #216E39; }
 
+
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
 /* D1D5DB */

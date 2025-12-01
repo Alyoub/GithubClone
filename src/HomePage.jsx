@@ -1,20 +1,18 @@
 import { GithubHeatmap } from "./Contributions-Table"
 import { Header } from "./Header"
 import { LeftPanel } from "./components/LeftPanel";
-import { useNavigate } from "react-router";
-import  {Testcard } from "./components/TestCard"
+import { useNavigate } from "react-router"
 import { WorkingCard } from "./components/WorkingCard"
+
+import { projectsHomePage } from "./Data/ProjectsData";
 
 export function HomePage() {
     
 
     const navigate = useNavigate();
 
-    const goToProject1 = () => {
-        navigate("/ProjectInfoDataCasa");
-      };
-      const goToProject2 = () => {
-        navigate("/ProjectInfoDataGitHub");
+     const goToProject = (Path) => {
+        navigate(Path);
       };
     
     
@@ -29,30 +27,24 @@ export function HomePage() {
                             <p className="font-bold lg:text-sm xl:text-lg">Projects</p>
                             <p className="lg:text-xs xl:text-sm text-blue-400 ">Customize your pin</p>
                         </div>
-                        <div className="grid grid-cols-2  gap-4 mt-2 ">
-                            <WorkingCard 
-                            title="E-Commerce UI/UX"
-                            description="CASA STITCH — Premium Streetwear E-Commerce UI/UX"
-                            status="Public"
-                            color="#D946EF"
-                            tech="UI / UX"
-                            onClick={goToProject1}
-                            />
-                            <WorkingCard 
-                            title="GitHub Clone Portfolio"
-                            description="GitHub Clone Portfolio Project"
-                            status="Public"
-                            color="#D946EF"
-                            tech="JavaScript"
-                            onClick={goToProject2}
-                            />
-                           
-                            <Testcard />
-                            <Testcard />
-                            <Testcard />
+                        <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 gap-4 mt-2 ">
                             
+                            {projectsHomePage.map((p) =>{
+                                return(
+                                    <WorkingCard
+                                        id ={p.id}
+                                        title={p.title}
+                                        description={p.description}
+                                        status={p.status}
+                                        color={p.color}
+                                        tech={p.tech}
+                                        onClick={() => goToProject(p.Path)}
+                                        cursor={p.cursor}
+                                    />
+                                ); 
+                            })}
                         </div>
-                        <div className="mt-12 flex">
+                        <div className="mt-12 hide-on-mobile flex">
                             <div className="w-[700px] border rounded-tr-lg rounded-tl-lg border-neutral-700 ">
                                 <GithubHeatmap username="the-Bandersnatch" />
                             </div>
@@ -63,7 +55,7 @@ export function HomePage() {
                                 <div className="hover:bg-neutral-800 hover:text-white text-gray-300 px-4  w-30 py-2 flex justify-start rounded-lg text-xs ">2022</div>
                             </div>
                         </div>
-                        <div className="mt-8 w-[700px]">
+                        <div className="mt-8 hide-on-mobile w-[700px]">
                             <p>Contribution activity</p>
                             <div className="mt-6 flex items-center gap-2">
                                 <p className="text-xs font-bold">November <span className="text-gray-300">2025</span></p>
