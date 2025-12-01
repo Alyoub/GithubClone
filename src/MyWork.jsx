@@ -1,6 +1,6 @@
 import { Header } from "./Header"
 import { LeftPanel } from "./components/LeftPanel";
-import { CardWork } from "./components/Workingcard"
+import { CardWork } from "./components/WorkingCard"
 import { useNavigate } from "react-router";
 import { ToolBarWorkPage } from "./components/ToolBar";
 
