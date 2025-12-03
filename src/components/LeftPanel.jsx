@@ -2,7 +2,7 @@ export function LeftPanel() {
     return (
         <div className="p-4 flex-1 ">
             <div className="w-45 h-45 md:w-50 md:h-50 border border-neutral-700  lg:w-70 lg:h-70 mx-auto rounded-full overflow-hidden">
-                <img src="/profile.jpeg"
+                <img src="/ME.png"
                     className="w-full h-full object-cover"
                     alt="profile"
                 />
@@ -13,9 +13,11 @@ export function LeftPanel() {
             <p className="sm:text-xs lg:text-sm xl:text-xl mx-auto text-neutral-400">
                 alyoub
             </p>
-            <button className="mt-6 bg-zinc-900 w-full py-2 border border-neutral-700 rounded-lg">
-                View Resume
-            </button>
+            <a href="/Alotfi-CV.pdf" target="_blank">
+                <button className="mt-6 bg-zinc-900 w-full py-2 border border-neutral-700 rounded-lg">
+                    View Resume
+                </button>
+            </a>
             <div className="py-5 pb-8 flex gap-2 items-center  border-b-2 border-neutral-700">
                 <img className="" src="/group-users.png"></img>
                 <p className="text-sm text-neutral-400">

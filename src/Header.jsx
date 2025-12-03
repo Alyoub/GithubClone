@@ -36,7 +36,7 @@ export function Header() {
                 <div className="py-1 px-1 border border-neutral-700 rounded-sm">
                     <img className="w-4 h-4" src="/code.png"></img>
                 </div>
-                <img className="w-10 h-10 object-cover border border-neutral-700 rounded-full " src="/profile.jpeg"></img>
+                <img className="w-10 h-10 object-cover border border-neutral-700 rounded-full " src="/ME.png"></img>
                 
                 </div>
             </div>

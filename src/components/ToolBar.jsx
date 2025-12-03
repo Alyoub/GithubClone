@@ -152,7 +152,6 @@ export function RightBarAboutPage() {
 export function AboutMeReadMe() {
     return (
       <div className="border border-neutral-700 rounded-lg flex-3 w-full max-w-4xl mx-auto my-4 bg-[#0D1117]">
-        {/* Header */}
         <div className="border-b border-neutral-700 rounded-t-lg px-4 py-2 flex justify-between items-center">
           <div className="flex gap-2 py-1 px-2 border-b-2 border-orange-500">
             <img className="w-4 sm:w-5" src="/Read.svg" alt="Read Icon" />
@@ -164,13 +163,12 @@ export function AboutMeReadMe() {
           </div>
         </div>
   
-        {/* Content */}
         <div className="mt-6 sm:mt-8 px-4 sm:px-6 py-4 overflow-y-auto">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
             👋 Hello, I'm a{" "}
             <ReactTyped
               strings={["UI/UX Designer", "Frontend Developer"]}
-              typeSpeed={0}
+              typeSpeed={70}
               backSpeed={50}
               loop
             />
