@@ -3,7 +3,7 @@ import { Header } from "./Header"
 import { LeftPanel } from "./components/LeftPanel";
 import { useNavigate } from "react-router"
 import { WorkingCard } from "./components/WorkingCard"
-
+import { AlertOnce } from "./AlertOnce"
 import { projectsHomePage } from "./Data/ProjectsData";
 
 export function HomePage() {
@@ -18,6 +18,7 @@ export function HomePage() {
     
     return (
         <>
+            <AlertOnce />
             <Header />
             <div className="container mx-auto px-4">
                 <mean className="flex gap-6 mt-8 flex-col md:flex-row">

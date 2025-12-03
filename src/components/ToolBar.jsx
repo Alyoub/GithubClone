@@ -149,39 +149,47 @@ export function RightBarAboutPage() {
 }
 
 
-export function AboutMeReadMe()
-{
-    return(
-        <div className="border  border-neutral-700 rounded-sm   flex-3">
-                    <div className="border-b border-neutral-700 reounded-lg px-4 flex justify-between items-center ">
-                        <div className="flex gap-2 py-2 px-2 border-b-2 border-orange-500 ">
-                            <img className="w-4" src="/Read.svg" />
-                            <p className="font-semibold">README</p>
-                        </div>
-                        <div className="flex gap-6">
-                            <img className="w-4" src="/Pen.svg" />
-                            <img className="w-4" src="/menu-11.svg" />
-                        </div>
-                    </div>
-                    <div className="mt-20 mr-4 pb-6 ml-4">
-                        <h1 className="text-3xl font-semibold">
-                            👋 Hello, I'm a{" "}
-                            <ReactTyped
-                                strings={["UI/UX Designer", "Frontend Developer"]}
-                                typeSpeed={70}
-                                backSpeed={50}
-                                loop
-                            />
-                        </h1>
-                        <h1 className="mt-8 ml-8 mr-8 text-neutral-200 leading-relaxed mb-6">
-                            I'm a <span className="font-semibold">Front-End Developer
-                            </span> and <span className="font-semibold">UI/UX Designer </span>
-                            who spends way too much time adjusting pixels and arguing with CSS. I love building clean, modern interfaces that actually make sense to humans (and hopefully don’t break on mobile… hopefully).
-                            I’m obsessed with good design, smooth interactions, and making users think “wow” instead of “what is this?”.
-                            Whether I’m sketching wireframes, choosing the perfect shade of blue, or fighting with responsive layouts at 2 AM, I enjoy turning ideas into real, functional, and beautiful experiences.
-                            I like to say I mix logic, creativity, and just a pinch of chaos to build things that look good and feel even better. and interactive interfaces.
-                        </h1>
-                    </div>
-                </div>
+export function AboutMeReadMe() {
+    return (
+      <div className="border border-neutral-700 rounded-lg flex-3 w-full max-w-4xl mx-auto my-4 bg-[#0D1117]">
+        {/* Header */}
+        <div className="border-b border-neutral-700 rounded-t-lg px-4 py-2 flex justify-between items-center">
+          <div className="flex gap-2 py-1 px-2 border-b-2 border-orange-500">
+            <img className="w-4 sm:w-5" src="/Read.svg" alt="Read Icon" />
+            <p className="font-semibold text-sm sm:text-base">README</p>
+          </div>
+          <div className="flex gap-4 sm:gap-6">
+            <img className="w-4 sm:w-5" src="/Pen.svg" alt="Pen Icon" />
+            <img className="w-4 sm:w-5" src="/menu-11.svg" alt="Menu Icon" />
+          </div>
+        </div>
+  
+        {/* Content */}
+        <div className="mt-6 sm:mt-8 px-4 sm:px-6 py-4 overflow-y-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
+            👋 Hello, I'm a{" "}
+            <ReactTyped
+              strings={["UI/UX Designer", "Frontend Developer"]}
+              typeSpeed={0}
+              backSpeed={50}
+              loop
+            />
+          </h1>
+  
+          <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-neutral-200 leading-relaxed">
+            I'm a <span className="font-semibold">Front-End Developer</span> and{" "}
+            <span className="font-semibold">UI/UX Designer</span> who spends way too
+            much time adjusting pixels and arguing with CSS. I love building clean,
+            modern interfaces that actually make sense to humans (and hopefully
+            don’t break on mobile… hopefully). I’m obsessed with good design, smooth
+            interactions, and making users think “wow” instead of “what is this?”.
+            Whether I’m sketching wireframes, choosing the perfect shade of blue, or
+            fighting with responsive layouts at 2 AM, I enjoy turning ideas into real,
+            functional, and beautiful experiences. I like to say I mix logic,
+            creativity, and just a pinch of chaos to build things that look good and
+            feel even better.
+          </p>
+        </div>
+      </div>
     );
-}
+  }
