@@ -16,8 +16,8 @@ export function Header() {
     
     
     return (
-        <header className=" flex flex-col justify-between bg-[#010409] h-[100px] border-b border-neutral-700 ">
-            <div className="flex gap-4 ml-3  mt-3">
+        <header className="flex flex-col justify-between bg-[#010409] h-[100px] border-b border-neutral-700 ">
+            <div onClick={() => goTo("/")} className="flex gap-4 ml-3 mt-3">
                 <div className="flex gap-4 items-center flex-2 ">
                     <div className="py-1 px-1 border border-neutral-700 rounded-sm">
                     <img className="w-4 h-4" src="/Menu.svg"></img>

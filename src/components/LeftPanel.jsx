@@ -14,7 +14,7 @@ export function LeftPanel() {
                 alyoub
             </p>
             <a href="/Alotfi-CV.pdf" target="_blank">
-                <button className="mt-6 bg-zinc-900 w-full py-2 border border-neutral-700 rounded-lg">
+                <button className="mt-6 hover:bg-gray-800 bg-zinc-900 w-full py-2 border border-neutral-700 rounded-lg">
                     View Resume
                 </button>
             </a>

@@ -3,7 +3,7 @@ import { ReactTyped } from "react-typed";
 
 export function ToolBarWorkPage() {
     return (
-        <div className="border-b pb-4 border-neutral-700 px-4 gap-2 items-center flex ">
+        <div className="border-b pb-4 hide-on-mobile border-neutral-700 px-4 gap-2 items-center flex ">
             <Input className="w-80 border-neutral-500" type="email" placeholder="Find a repository" />
             <button className="bg-gray-800 gap-4 items-center px-4 h-8 border border-neutral-600 rounded-sm flex">
                 <p className="text-sm font-semibold">Type</p>

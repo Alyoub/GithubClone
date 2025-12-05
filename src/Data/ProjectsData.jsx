@@ -6,7 +6,7 @@ export const projectsWorkPage = [
     status: "Public",
     tech: "JavaScript",
     time: "Updated 15 hours ago",
-    color: "#D946EF",
+    color: "#F7DF1E",
     Path: "/ProjectInfoDataGitHub",
     cursor : "pointer"
   },
@@ -24,7 +24,7 @@ export const projectsWorkPage = [
     status: "Private",
     tech: "x",
     time: "Test",
-    color: "#D946EF",
+    color: "#5BC0EB",
     Path: "/mywork",
     cursor : "not-allowed"
   },
@@ -33,7 +33,7 @@ export const projectsWorkPage = [
     status: "Private",
     tech: "x",
     time: "Test",
-    color: "#D946EF",
+    color: "#5BC0EB",
     Path: "/mywork",
     cursor : "not-allowed"
   },
@@ -42,7 +42,7 @@ export const projectsWorkPage = [
     status: "Private",
     tech: "x",
     time: "Test",
-    color: "#D946EF",
+    color: "#5BC0EB",
     Path: "/mywork",
     cursor : "not-allowed"
   },
@@ -53,7 +53,7 @@ export const projectsHomePage = [
   {
     title: "E-Commerce UI/UX",
     status: "Public",
-    tech: "JavaScript",
+    tech: "UI / UX",
     description: "CASA STITCH — Premium Streetwear E-Commerce UI/UX",
     color: "#D946EF",
     Path: "/ProjectInfoDataCasa",
@@ -63,7 +63,7 @@ export const projectsHomePage = [
     title :"GitHub Clone Portfolio",
     description : "GitHub Clone Portfolio Project",
     status : "Public",
-    color : "#D946EF",
+    color : "#F7DF1E",
     tech  : "JavaScript",
     Path: "/ProjectInfoDataGitHub",
     cursor : "pointer"
@@ -72,7 +72,7 @@ export const projectsHomePage = [
     title :"TEST",
     description : "Test",
     status : "Private",
-    color : "#D946EF",
+    color : "#5BC0EB",
     tech  : "x",
     Path: "/",
     cursor : "not-allowed"
@@ -81,7 +81,7 @@ export const projectsHomePage = [
     title :"TEST",
     description : "Test",
     status : "Private",
-    color : "#D946EF",
+    color : "#5BC0EB",
     tech  : "x",
     Path: "/",
     cursor : "not-allowed"
@@ -90,7 +90,7 @@ export const projectsHomePage = [
     title :"TEST",
     description : "Test",
     status : "Private",
-    color : "#D946EF",
+    color : "#5BC0EB",
     tech  : "x",
     Path: "/",
     cursor : "not-allowed"

@@ -116,7 +116,7 @@ export function ProjectInfoDataGitHub() {
         </>
       }
       srcText="GitHub Repository"
-      srcHref="https://github.com/your-username/your-repo-link"
+      srcHref="https://github.com/Alyoub/my-portfolio"
     />
   );
 }
@@ -167,7 +167,7 @@ export function ProjectInfoDataCasa() {
         </>
       }
       srcText="View Figma Prototype"
-      srcHref="https://www.figma.com/file/your-figma-link"
+      srcHref="https://www.figma.com/design/mNyD7hRj3K2N1rxV4R2mg1/Casa-Stitch?t=SBBDtoXKe7XmE3Sn-0"
     />
   );
 }
