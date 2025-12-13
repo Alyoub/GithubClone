@@ -47,7 +47,7 @@ export function HomePage() {
                         </div>
                         <div className="mt-12 hide-on-mobile flex">
                             <div className="w-[700px] border rounded-tr-lg rounded-tl-lg border-neutral-700 ">
-                                <GithubHeatmap username="the-Bandersnatch" />
+                                <GithubHeatmap username="Alyoub" />
                             </div>
                             <div className="ml-4 flex flex-col gap-2">
                                 <div className="bg-blue-500 px-4 py-2  w-30 rounded-lg text-sm flex justify-start  ">2025</div>
